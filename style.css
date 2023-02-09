@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: burlywood;
+    padding: 0 10px;
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .inp{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .inp label{
+    width: 200px;
+    color: black;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.wrapper .form .inp .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #0a0a0a;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.wrapper .form .inp .input:focus{
+    border: 1px solid rgb(231, 4, 4);
+}
+
+.wrapper .form .inp .reg{
+    width: 100%;
+    padding: 8px 10px;
+    font: size 15px;
+    border: 0;
+    background:burlywood;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .inp:last-child{
+    margin-bottom: 0;
+}
+
+.wrapper .form .inp .reg:hover{
+    background: #ffd658;
+}
+
+@media (max-width: 420){
+    .wrapper .form .inp{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .inp label{
+       margin-bottom: 5px;
+    }
+    .wrapper .form .inp.terms{
+        flex-direction: row;
+    }
+}
